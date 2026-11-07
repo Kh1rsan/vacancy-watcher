@@ -7,18 +7,11 @@
 1. Установить Python 3.10 или новее.
 2. В папке проекта выполнить `py -m pip install -r requirements.txt` (это установит `aiohttp` для асинхронных запросов).
 3. Создать бота через `@BotFather` командой `/newbot`, написать новому боту `/start` и получить токен.
-4. В PowerShell задать токен и узнать ID личного чата:
+4. Создать файл .env с переменными среды:
 
    ```powershell
-   $env:TELEGRAM_BOT_TOKEN = "токен_от_BotFather"
-   (Invoke-RestMethod "https://api.telegram.org/bot$env:TELEGRAM_BOT_TOKEN/getUpdates").result[-1].message.chat.id
-   ```
-
-   Скопировать выведенный ID чата, задать его и запустить скрипт в том же окне PowerShell:
-
-   ```powershell
-   $env:TELEGRAM_CHAT_ID = "ID_чата"
-   py vacancy_watcher.py
+   TELEGRAM_BOT_TOKEN = "токен_от_BotFather"
+   TELEGRAM_CHAT_ID = "ID_чата"
    ```
 
 Программа сразу выполняет поиск, затем повторяет его раз в час. Оставьте окно консоли открытым. Для непрерывной работы после перезагрузки компьютера можно позже настроить Планировщик заданий Windows.
