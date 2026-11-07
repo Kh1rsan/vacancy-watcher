@@ -1,0 +1,16 @@
+{
+  "region_name": "Россия",
+  "region_id": 113,
+  "search_url": "https://hh.ru/search/vacancy",
+  "search_text": "сварщик",
+  "no_experience_only": true,
+  "interval_seconds": 3600,
+  "request_timeout_seconds": 20,
+  "concurrency": 4,
+  "per_page": 20,
+  "max_pages": 10,
+  "sort_by": "publication_time",
+  "search_period_days": 0,
+  "training_keywords": ["обучени", "обучим", "обучать", "готовы обучить", "без опыта", "стажировк", "ученик"],
+  "welding_keywords": ["ручн", "дугов", "р.д.", "рд"]
+}
